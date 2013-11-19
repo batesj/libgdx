@@ -26,6 +26,7 @@ import android.os.Debug;
 import android.os.Handler;
 import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
+import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -57,7 +58,7 @@ import com.badlogic.gdx.utils.GdxNativesLoader;
  * configuration for the GLSurfaceView.
  * 
  * @author mzechner */
-public class AndroidApplication extends Activity implements Application {
+public class AndroidApplication extends FragmentActivity implements Application {
 	static {
 		GdxNativesLoader.load();
 	}
